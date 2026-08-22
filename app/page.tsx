@@ -1,16 +1,16 @@
-import { AboutSection } from "@/src/components/sections/about";
-import { FinalCtaSection } from "@/src/components/sections/final-cta";
-import { Footer } from "@/src/components/sections/footer";
-import { GallerySection } from "@/src/components/sections/gallery";
-import { Hero } from "@/src/components/sections/hero";
-import { LocationSection } from "@/src/components/sections/location";
-import { Navbar } from "@/src/components/sections/navbar";
-import { ReviewsSection } from "@/src/components/sections/reviews";
-import { ServicesSection } from "@/src/components/sections/services";
-import { barberConfig } from "@/src/config/barber";
-import type { CSSProperties } from "react";
+// import { AboutSection } from "@/src/components/sections/about";
+// import { FinalCtaSection } from "@/src/components/sections/final-cta";
+// import { Footer } from "@/src/components/sections/footer";
+// import { GallerySection } from "@/src/components/sections/gallery";
+// import { Hero } from "@/src/components/sections/hero";
+// import { LocationSection } from "@/src/components/sections/location";
+// import { Navbar } from "@/src/components/sections/navbar";
+// import { ReviewsSection } from "@/src/components/sections/reviews";
+// import { ServicesSection } from "@/src/components/sections/services";
+// import { barberConfig } from "@/src/config/OLDbarber";
+// import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
-import { BarberProvider } from "@/src/contexts/BarberContext";
+// import { BarberProvider } from "@/src/contexts/BarberContext";
 
 function hexToRgbTriplet(hex: string): string {
   const normalized = hex.replace("#", "").trim();
@@ -35,30 +35,30 @@ function hexToRgbTriplet(hex: string): string {
 }
 
 export default function Home() {
-  const themeVars = {
-    "--accent": barberConfig.accentColor,
-    "--accent-rgb": hexToRgbTriplet(barberConfig.accentColor),
-  } as CSSProperties;
-
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BarberShop",
-    name: barberConfig.legalName,
-    image: ["/images/placeholder-editorial.svg"],
-    description: barberConfig.description,
-    telephone: barberConfig.phone,
-    email: barberConfig.email,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: barberConfig.address,
-      addressCountry: "FR",
-    },
-    areaServed: barberConfig.city,
-    sameAs: [barberConfig.instagramUrl],
-    url: barberConfig.bookingUrl,
-  };
-
   return notFound();
+
+  // const themeVars = {
+  //   "--accent": barberConfig.accentColor,
+  //   "--accent-rgb": hexToRgbTriplet(barberConfig.accentColor),
+  // } as CSSProperties;
+
+  // const jsonLd = {
+  //   "@context": "https://schema.org",
+  //   "@type": "BarberShop",
+  //   name: barberConfig.legalName,
+  //   image: ["/images/placeholder-editorial.svg"],
+  //   description: barberConfig.description,
+  //   telephone: barberConfig.phone,
+  //   email: barberConfig.email,
+  //   address: {
+  //     "@type": "PostalAddress",
+  //     streetAddress: barberConfig.address,
+  //     addressCountry: "FR",
+  //   },
+  //   areaServed: barberConfig.city,
+  //   sameAs: [barberConfig.instagramUrl],
+  //   url: barberConfig.bookingUrl,
+  // };
 
   // return (
   //   <BarberProvider config={barberConfig}>

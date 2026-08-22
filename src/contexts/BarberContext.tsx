@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext } from "react";
-import type { BarberConfig } from "@/src/config";
+import type { BarberConfig } from "@/src/config/index";
 
 const BarberContext = createContext<BarberConfig | null>(null);
 

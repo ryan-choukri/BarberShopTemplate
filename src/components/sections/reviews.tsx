@@ -1,11 +1,13 @@
-import { barberConfig } from "@/src/config/barber";
+"use client";
 import { SectionHeading } from "@/src/components/layout/section-heading";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 
 function stars(rating: number): string {
   return "*".repeat(rating);
 }
 
 export function ReviewsSection() {
+  const barberConfig = useCurrentBarber();
   const [firstReview, ...otherReviews] = barberConfig.reviews;
 
   return (

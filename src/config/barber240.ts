@@ -1,4 +1,4 @@
-import type { BarberConfig } from "./barber";
+import type { BarberConfig } from "./index";
 
 export const Barber240Config: BarberConfig = {
   domain: "barber-240",

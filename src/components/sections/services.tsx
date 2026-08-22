@@ -1,8 +1,11 @@
-import { barberConfig } from "@/src/config/barber";
+"use client";
 import { SectionHeading } from "@/src/components/layout/section-heading";
 import { ButtonLink } from "@/src/components/ui/button-link";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 
 export function ServicesSection() {
+  const barberConfig = useCurrentBarber();
+
   return (
     <section id="prestations">
       <div className="section-shell py-16 md:py-24">

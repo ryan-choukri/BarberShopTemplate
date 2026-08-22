@@ -2,7 +2,6 @@
 import { useCurrentBarber } from "@/src/contexts/BarberContext";
 import Image from "next/image";
 
-import { barberConfig } from "@/src/config/barber";
 import { SectionHeading } from "@/src/components/layout/section-heading";
 
 const spanClass: Record<"wide" | "tall" | "large" | "default", string> = {
