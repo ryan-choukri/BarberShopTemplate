@@ -1,7 +1,8 @@
 import { barberConfigs } from "@/src/config/index";
-
+import Image from "next/image";
 import { isAdminAuthenticated } from "@/src/lib/admin-auth";
 import AdminLogin from "./adminLogin";
+import Link from "next/link";
 
 export default async function AdminPage() {
   const authenticated = await isAdminAuthenticated();
@@ -28,27 +29,44 @@ export default async function AdminPage() {
         <div className="space-y-4">
           {barbers.map((barber) => (
             <div
-              key={barber.name}
-              className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-950 p-6"
+              key={barber.domain}
+              style={{ borderColor: barber.accentColor }}
+              className={`flex flex-col sm:flex-row items-center justify-between rounded-xl border border-zinc-800 p-6`}
             >
-              <div>
-                <h2 className="text-xl font-semibold">{barber.name}</h2>
+              <div className="flex flex-row items-center gap-4">
+                <Image
+                  src={barber.logo}
+                  alt={`${barber.name} logo`}
+                  width={80}
+                  height={80}
+                  className="rounded-full"
+                />
 
-                <p className="mt-1 text-sm text-zinc-500">/{barber.name}</p>
+                <div>
+                  <h2 className="text-xl font-semibold">{barber.name}</h2>
 
-                {barber.domain && (
-                  <p className="mt-1 text-sm text-zinc-400">{barber.domain}</p>
-                )}
+                  <p className="mt-1 text-sm text-zinc-500">{barber.city}</p>
+
+                  {barber.domain && (
+                    <Link
+                      href={barber.mapsUrl}
+                      className="mt-1 text-sm text-sky-500 italic hover:underline"
+                    >
+                      Google Map : {barber.mapsUrl}
+                    </Link>
+                  )}
+                </div>
               </div>
-
-              <a
-                href={`/${barber.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black"
-              >
-                Voir le site
-              </a>
+              <div className="flex mt-2 sm:mt-8 items-end gap-2">
+                <Link
+                  href={`/${barber.domain}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black"
+                >
+                  Voir le site
+                </Link>
+              </div>
             </div>
           ))}
         </div>

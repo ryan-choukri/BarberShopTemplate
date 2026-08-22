@@ -12,7 +12,7 @@ export async function POST(request: Request) {
 
   if (password !== process.env.ADMIN_PASSWORD) {
     return NextResponse.json(
-      { error: "Mot de passe incorrect" },
+      { error: "Mot de passe incorrect 2" },
       { status: 401 },
     );
   }
