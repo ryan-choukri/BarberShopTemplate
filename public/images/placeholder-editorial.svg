@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Editorial barber visual">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f0f0f" />
+      <stop offset="50%" stop-color="#1d1d1d" />
+      <stop offset="100%" stop-color="#2b241d" />
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M0 35.5h36" stroke="#2f2f2f" stroke-width="1" />
+      <path d="M35.5 0v36" stroke="#2f2f2f" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect width="1200" height="900" fill="url(#grid)" opacity="0.35" />
+  <rect x="100" y="100" width="1000" height="700" fill="none" stroke="#b68a56" stroke-opacity="0.6" stroke-width="2" />
+  <text x="150" y="760" fill="#f2f2ef" font-size="66" font-family="Arial, sans-serif" letter-spacing="8">ATELIER NORD</text>
+  <text x="150" y="815" fill="#cdcdc8" font-size="24" font-family="Arial, sans-serif" letter-spacing="4">BARBER STUDIO PREMIUM</text>
+</svg>
