@@ -24,8 +24,8 @@ export function SectionHeading({
           <p className="text-[10px] font-semibold uppercase tracking-[0.34em] text-[var(--accent)]">
             {kicker}
           </p>
-        ) : null}
-        <h2 className="font-display text-4xl uppercase leading-[0.92] tracking-[0.01em] text-zinc-50 md:text-7xl">
+        ) : null}{" "}
+        <h2 className="font-joaquin [word-spacing:-20%] tracking-normal  leading-[0.92] text-4xl uppercase leading-[0.92] tracking-[0.01em] text-zinc-50 md:text-7xl">
           {title}
         </h2>
       </div>

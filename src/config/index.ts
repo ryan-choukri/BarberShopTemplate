@@ -1,3 +1,4 @@
+import { Barber240Config } from "./barber240";
 import { Barber46Config } from "./barber46";
 
 export type OpeningHours = {
@@ -66,5 +67,7 @@ export type BarberConfig = {
   socialImages: SocialImage[];
 };
 
-export const barberConfig: BarberConfig = Barber46Config;
-// export const barberConfig: BarberConfig = Barber240Config;
+export const barberConfigs: Record<string, BarberConfig> = {
+  "barber-240": Barber240Config,
+  "46th-barber-street": Barber46Config,
+};

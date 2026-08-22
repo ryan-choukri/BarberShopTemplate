@@ -1,8 +1,11 @@
-import { barberConfig } from "@/src/config/barber";
+"use client";
 import { SectionHeading } from "@/src/components/layout/section-heading";
 import { ButtonLink } from "@/src/components/ui/button-link";
+import Link from "next/link";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 
 export function LocationSection() {
+  const barberConfig = useCurrentBarber();
   return (
     <section id="contact">
       <div className="section-shell grid gap-8 py-16 md:grid-cols-12 md:py-24">
@@ -14,12 +17,17 @@ export function LocationSection() {
             align="split"
           />
 
-          <dl className="mt-10 space-y-6 text-sm text-zinc-200">
+          <dl className="sm:mt-10 mt-4 space-y-6 text-sm text-zinc-200">
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-zinc-400">
                 Adresse
               </dt>
-              <dd className="mt-2">{barberConfig.address}</dd>
+              <Link
+                href={barberConfig.mapsUrl}
+                className="block mt-2 text-sm text-zinc-300 hover:text-[var(--accent)]"
+              >
+                {barberConfig.address}
+              </Link>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-zinc-400">

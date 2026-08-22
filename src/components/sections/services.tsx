@@ -8,7 +8,7 @@ export function ServicesSection() {
       <div className="section-shell py-16 md:py-24">
         <SectionHeading
           kicker="Prestations"
-          title="Le bon service au bon tempo"
+          title="Nos Prestations"
           subtitle="Des prestations claires, sans options inutiles. Vous choisissez votre format, nous assurons la precision."
           align="split"
         />

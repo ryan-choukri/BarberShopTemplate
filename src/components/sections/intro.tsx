@@ -1,11 +1,13 @@
-import { barberConfig } from "@/src/config/barber";
+"use client";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 
 export function IntroStatement() {
+  const barberConfig = useCurrentBarber();
   return (
     <section>
       <div className="section-shell grid gap-10 py-18 md:grid-cols-12 md:py-28">
         <div className="md:col-span-8">
-          <p className="font-display text-4xl uppercase leading-[0.9] tracking-[0.01em] text-zinc-50 sm:text-5xl md:text-8xl">
+          <p className="font-joaquin [word-spacing:-20%] tracking-normal leading-[0.92] text-4xl uppercase  tracking-[0.01em] text-zinc-50 sm:text-5xl md:text-8xl">
             {barberConfig.slogan.split(". ").map((line) => (
               <span
                 key={line}

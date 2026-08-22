@@ -1,6 +1,8 @@
-import { barberConfig } from "@/src/config/barber";
+"use client";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 
 export function Footer() {
+  const barberConfig = useCurrentBarber();
   return (
     <footer className="bg-black py-14">
       <div className="section-shell grid gap-4 text-sm text-zinc-300 md:grid-cols-12">

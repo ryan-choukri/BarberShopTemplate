@@ -1,3 +1,5 @@
+"use client";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 import Image from "next/image";
 
 import { barberConfig } from "@/src/config/barber";
@@ -11,6 +13,7 @@ const spanClass: Record<"wide" | "tall" | "large" | "default", string> = {
 };
 
 export function GallerySection() {
+  const barberConfig = useCurrentBarber();
   return (
     <section id="realisations">
       <div className="section-shell py-16 md:py-28">

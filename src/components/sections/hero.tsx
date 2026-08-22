@@ -1,27 +1,29 @@
+"use client";
 import Image from "next/image";
 
-import { barberConfig } from "@/src/config/barber";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 import { ButtonLink } from "@/src/components/ui/button-link";
 
 export function Hero() {
+  const barberConfig = useCurrentBarber();
   return (
     <section id="top" className="relative overflow-hidden">
       <div
         className="absolute -left-24 top-20 h-52 w-52 rounded-full bg-[var(--accent)]/20 blur-3xl"
         aria-hidden="true"
       />
-      {/* <div
-        className="absolute right-0 top-0 h-full w-1/2 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.10),transparent_60%)]"
+      <div
+        className="absolute left-100 top-0 h-[150%] w-[150%] bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent)_35%,transparent)_0%,transparent_40%)]"
         aria-hidden="true"
-      /> */}
+      />
 
       <div className="section-shell grid md:gap-8 gap-2 py-2 md:grid-cols-12 md:py-20">
         <div className="order-2 md:order-1 md:col-span-5 md:self-end md:pb-10">
           <p className="mb-5 text-[10px] uppercase tracking-[0.3em] text-zinc-400">
-            Studio barber premium | {barberConfig.city}
+            {barberConfig.subTitle}
           </p>
-          <h1 className="font-display text-5xl uppercase leading-[0.86] tracking-[0.01em] text-zinc-50 sm:text-6xl md:text-[7.2rem]">
-            Coupes nettes. Presence forte.
+          <h1 className="font-joaquin [word-spacing:-20%] tracking-normal text-5xl uppercase leading-[0.92] text-zinc-50 sm:text-6xl md:text-[5.2rem]">
+            {barberConfig.title}
           </h1>
           <p className="sm:mt-8 mt-4 max-w-sm text-sm leading-relaxed text-zinc-300 md:text-base">
             {barberConfig.description}
@@ -47,9 +49,10 @@ export function Hero() {
         {/* invisible md:visible */}
         <div className=" order-1 md:order-2 md:col-span-7">
           <div className="invisible md:visible">
-            <div className="md:h-[62vh] md:min-h-[430px] group relative h-[18vh] min-h-[60px] overflow-hidden border border-zinc-800 bg-zinc-900  md:translate-y-6">
+            <div className="premiumImage md:h-[62vh] md:min-h-[430px] group relative h-[18vh] min-h-[60px] overflow-hidden border border-zinc-800 bg-zinc-900  md:translate-y-6">
+              <div className="insidePremiumImage"></div>
               <Image
-                src="/images/logo.png"
+                src={barberConfig.logo}
                 alt="Barber en plein travail sur une coupe degradee"
                 width={220}
                 height={220}
@@ -58,7 +61,7 @@ export function Hero() {
                 sizes="(max-width: 868px) 130px, 96px"
               />
               <Image
-                src="/images/logo.png"
+                src={barberConfig.logo}
                 alt="Barber en plein travail sur une coupe degradee"
                 width={220}
                 height={220}

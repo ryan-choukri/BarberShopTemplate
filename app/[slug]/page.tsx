@@ -3,15 +3,14 @@ import { FinalCtaSection } from "@/src/components/sections/final-cta";
 import { Footer } from "@/src/components/sections/footer";
 import { GallerySection } from "@/src/components/sections/gallery";
 import { Hero } from "@/src/components/sections/hero";
+import { getBarberBySlug } from "@/src/components/lib/barber-config";
 import { LocationSection } from "@/src/components/sections/location";
 import { Navbar } from "@/src/components/sections/navbar";
 import { ReviewsSection } from "@/src/components/sections/reviews";
 import { ServicesSection } from "@/src/components/sections/services";
-import { barberConfig } from "@/src/config/barber";
 import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { BarberProvider } from "@/src/contexts/BarberContext";
-
 function hexToRgbTriplet(hex: string): string {
   const normalized = hex.replace("#", "").trim();
   const full =
@@ -34,7 +33,22 @@ function hexToRgbTriplet(hex: string): string {
   return `${r}, ${g}, ${b}`;
 }
 
-export default function Home() {
+interface Props {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function Home({ params }: Props) {
+  const { slug } = await params;
+  console.log(slug);
+  const barberConfig = getBarberBySlug(slug);
+
+  if (!barberConfig) {
+    notFound();
+  }
+  console.log(barberConfig);
+
   const themeVars = {
     "--accent": barberConfig.accentColor,
     "--accent-rgb": hexToRgbTriplet(barberConfig.accentColor),
@@ -58,31 +72,29 @@ export default function Home() {
     url: barberConfig.bookingUrl,
   };
 
-  return notFound();
-
-  // return (
-  //   <BarberProvider config={barberConfig}>
-  //     <div style={themeVars}>
-  //       <script
-  //         type="application/ld+json"
-  //         dangerouslySetInnerHTML={{
-  //           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
-  //         }}
-  //       />
-  //       <Navbar />
-  //       <main className="flex-1 bg-black text-zinc-100">
-  //         <Hero />
-  //         {/* <IntroStatement /> */}
-  //         <ServicesSection />
-  //         <GallerySection />
-  //         <AboutSection />
-  //         <ReviewsSection />
-  //         {/* <SocialProofSection /> */}
-  //         <LocationSection />
-  //         <FinalCtaSection />
-  //       </main>
-  //       <Footer />
-  //     </div>
-  //   </BarberProvider>
-  // );
+  return (
+    <BarberProvider config={barberConfig}>
+      <div style={themeVars}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+        <Navbar />
+        <main className="flex-1 bg-black text-zinc-100">
+          <Hero />
+          {/* <IntroStatement /> */}
+          <ServicesSection />
+          <GallerySection />
+          <AboutSection />
+          <ReviewsSection />
+          {/* <SocialProofSection /> */}
+          <LocationSection />
+          <FinalCtaSection />
+        </main>
+        <Footer />
+      </div>
+    </BarberProvider>
+  );
 }

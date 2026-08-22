@@ -1,15 +1,17 @@
+"use client";
 import Image from "next/image";
 
-import { barberConfig } from "@/src/config/barber";
+import { useCurrentBarber } from "@/src/contexts/BarberContext";
 import { SectionHeading } from "@/src/components/layout/section-heading";
 
 export function AboutSection() {
+  const barberConfig = useCurrentBarber();
   return (
-    <section id="equipe" className="border-b border-zinc-900">
+    <section id="equipe" className="backgroundImage border-b border-zinc-900">
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-8 md:py-24">
         <SectionHeading
           kicker="A propos"
-          title="Une equipe, une ligne"
+          title="Une équipe, une ligne"
           subtitle="Pas de chaine, pas de coupe standardisee. Ici, chaque rendez-vous commence par un vrai echange et un regard sur votre style de vie."
         />
 
@@ -24,7 +26,7 @@ export function AboutSection() {
                   src={member.image}
                   alt={member.imageAlt}
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
