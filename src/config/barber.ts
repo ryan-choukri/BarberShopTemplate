@@ -73,8 +73,8 @@ export const barberConfig: BarberConfig = {
   instagram: "@barber.240",
   instagramUrl: "https://www.instagram.com/barber.240/",
   bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.google.com/?q=18+rue+des+Lices+49100+Angers",
-  accentColor: "#30e68b",
+  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
+  accentColor: "#006b53",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },

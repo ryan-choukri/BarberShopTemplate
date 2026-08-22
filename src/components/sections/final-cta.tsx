@@ -5,7 +5,7 @@ export function FinalCtaSection() {
   return (
     <section className="relative overflow-hidden border-b border-zinc-900 py-20 md:py-28">
       <div
-        className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(var(--accent-rgb),0.25),transparent_45%)]"
+        className="inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(var(--accent-rgb),0.25),transparent_45%)]"
         aria-hidden="true"
       />
       <div className="mx-auto flex w-full max-w-7xl flex-col items-start px-5 md:px-8">

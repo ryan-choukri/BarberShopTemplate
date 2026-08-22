@@ -21,7 +21,7 @@ export function ButtonLink({
 
   const variants = {
     primary:
-      "border-(--accent) bg-(--accent) text-black hover:-translate-y-0.5 hover:bg-transparent hover:text-(--accent)",
+      "border-(--accent) bg-(--accent) text-zinc-100 hover:-translate-y-0.5 hover:bg-transparent hover:text-(--accent)",
     secondary:
       "border-zinc-500 bg-transparent text-zinc-100 hover:-translate-y-0.5 hover:border-(--accent) hover:text-(--accent)",
     ghost:

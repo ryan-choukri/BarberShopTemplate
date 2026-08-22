@@ -3,7 +3,7 @@ import { barberConfig } from "@/src/config/barber";
 export function Footer() {
   return (
     <footer className="bg-black py-14">
-      <div className="section-shell grid gap-10 text-sm text-zinc-300 md:grid-cols-12">
+      <div className="section-shell grid gap-4 text-sm text-zinc-300 md:grid-cols-12">
         <div>
           <p className="font-display text-3xl uppercase text-zinc-50">
             {barberConfig.name}

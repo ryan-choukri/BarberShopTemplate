@@ -61,7 +61,7 @@ export function Hero() {
               width={220}
               height={220}
               priority
-              className="absolute right-4 top-4 z-20 h-auto w-16 object-contain opacity-95 drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] transition-transform duration-700 group-hover:scale-115 md:right-6 md:top-6 md:w-24"
+              className="absolute right-4 top-4 z-20 h-auto w-16 object-contain opacity-95 drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] transition-transform duration-700 group-hover:scale-125 md:right-6 md:top-6 md:w-24"
               sizes="(max-width: 768px) 64px, 96px"
             />
 
