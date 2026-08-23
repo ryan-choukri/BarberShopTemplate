@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
-  subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+export const BarberLeClangeoffreyConfig: BarberConfig = {
+  domain: "barber-le-clangeoffrey",
+  title: "Votre Barber à Sète",
+  subTitle: "Votre style. Notre signature.",
+  name: "Le Clan Geoffrey",
+  legalName: "Le Clan Geoffrey",
+  logo: "",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Barber Le Clan Geoffrey est un salon de coiffure et de barbier situé à Angers, spécialisé dans les coupes de cheveux et les soins de barbe pour hommes. Notre équipe de barbiers expérimentés offre des services personnalisés pour répondre aux besoins et aux préférences de chaque client, en utilisant des techniques modernes et des produits de qualité. Nous nous engageons à créer une expérience unique et agréable pour nos clients, en mettant l'accent sur le style, la précision et le confort.",
+  city: "Sète",
+  address: "3 Bis Av. Victor Hugo, 34200 Sète",
+  phone: "06 95 62 26 82",
+  email: "",
+  instagram: "@le_clangeoffrey",
+  instagramUrl: "https://www.instagram.com/le_clangeoffrey",
+  bookingUrl: "https://www.planity.com/le-clan-geoffrey-sete-34200",
+  mapsUrl: "https://maps.app.goo.gl/5oBkQp6hjrn2mYE48",
+  accentColor: "#061d50",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },

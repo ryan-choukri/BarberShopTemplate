@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
+export const BarberHommeEtJeanConfig: BarberConfig = {
+  domain: "lhomme-et-jean",
+  title: "Votre Coiffeur à Montpellier",
   subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+  name: "L’homme et Jean",
+  legalName: "L’homme et Jean",
+  logo: "/images/lhomme-et-jean/logo.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Coiffeur à Montpellier. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Montpellier",
+  address: "1348 Av. de la Mer-Raymond Dugrand, 34000 Montpellier",
+  phone: "0467075256",
+  email: "contact@lhomme-et-jean.fr",
+  instagram: "@lhomme___",
+  instagramUrl: "https://www.instagram.com/lhomme___",
+  bookingUrl: "https://www.planity.com/lhomme-34000-montpellier",
+  mapsUrl: "https://maps.app.goo.gl/jS4CEpG1Ptqac25UA",
+  accentColor: "#7e3d14",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },

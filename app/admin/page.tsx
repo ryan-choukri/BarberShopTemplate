@@ -31,7 +31,7 @@ export default async function AdminPage() {
             <div
               key={barber.domain}
               style={{ borderColor: barber.accentColor }}
-              className={`flex flex-col sm:flex-row items-center justify-between rounded-xl border border-zinc-800 p-6`}
+              className={`flex flex-col sm:flex-row items-center justify-between rounded-xl border-3 border-l-10 border-zinc-800 p-6`}
             >
               <div className="flex flex-row items-center gap-4">
                 <Image

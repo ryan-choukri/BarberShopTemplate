@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
+export const BarberHaircutFactory: BarberConfig = {
+  domain: "haircut-factory",
+  name: "Haircut Factory",
+  legalName: "Haircut Factory",
+  title: "Votre Barber à Montpellier",
   subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+  logo: "/images/haircut-factory/logo.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Barber studio à Montpellier. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Montpellier",
+  address: "209 Av. du Pont-Trinquat, 34000 Montpellier",
+  phone: " 07 66 94 18 19",
+  email: "contact@haircut.factory.fr",
+  instagram: "@haircutfactory_",
+  instagramUrl: "https://www.instagram.com/haircutfactory_",
+  bookingUrl: "https://www.planity.com/hair-cut-factory-34000-montpellier",
+  mapsUrl: "https://maps.app.goo.gl/jLjYRVhAx5Aav2sM6",
+  accentColor: "#ad9b29",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },
@@ -77,6 +76,7 @@ export const Barber46Config: BarberConfig = {
       image: "/images/team/unbarber.jpg",
       imageAlt: "Portrait du fondateur Nassim Benali",
     },
+
     {
       name: "Lenny Costa",
       role: "Senior Barber",

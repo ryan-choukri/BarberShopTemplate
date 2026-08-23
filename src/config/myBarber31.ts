@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
-  subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+export const MyBarber31Config: BarberConfig = {
+  title: "Votre Barber à Toulouse",
+  domain: "mybarber31",
+  name: "My Barber 31",
+  subTitle: "Votre style. Notre signature.",
+  legalName: "My Barber 31",
+  logo: "",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Barber à Toulouse. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Toulouse",
+  address: "7 rue du rempart saint Étienne 31000 Toulouse",
+  phone: "09 88 35 54 77",
+  email: "barberafro.31@gmail.com",
+  instagram: "@mybarber31",
+  instagramUrl: "https://www.instagram.com/mybarber31/",
+  bookingUrl: "https://www.planity.com/lm-studio-31000-toulouse-g8i",
+  mapsUrl: "https://www.facebook.com/SonyhdMabaya/",
+  accentColor: "#c2bc00",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },

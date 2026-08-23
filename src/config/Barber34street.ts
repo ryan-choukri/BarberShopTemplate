@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
-  subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+export const Barber34streetConfig: BarberConfig = {
+  name: "34 Barberstreet",
+  domain: "34-barberstreet",
+  title: "Votre Barber à Béziers",
+  legalName: "",
+  logo: "",
+  subTitle: "Votre style. Notre signature.",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Barber à Béziers. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Béziers",
+  address: "14 avenue maréchal joffre 34500 Béziers",
+  phone: "06 13 28 34 29",
+  email: "nordinehamdaoui3@gmail.com",
+  instagram: "@34th_barberstreet_beziers",
+  instagramUrl: "https://www.instagram.com/34th_barberstreet_beziers/",
+  bookingUrl: "",
+  mapsUrl: "https://maps.app.goo.gl/LbKgQK36FagPNcFW8",
+  accentColor: "#bd0000",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },

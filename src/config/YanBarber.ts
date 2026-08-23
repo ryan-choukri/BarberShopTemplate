@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
-  subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+export const YanBarberConfig: BarberConfig = {
+  domain: "yan-barber",
+  title: "Votre Barber à Guyancourt",
+  subTitle: "Votre style. Notre signature.",
+  name: "YanBarber",
+  legalName: "Yan Barber",
+  logo: "",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Yan Barber. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Guyancourt",
+  address: "25 Rue Ambroise Croizat, 78280 Guyancourt",
+  phone: "07 62 38 49 98",
+  email: "",
+  instagram: "@yan_barber",
+  instagramUrl: "https://www.instagram.com/yan_barber/",
+  bookingUrl: "https://www.planity.com/yan-barber-village-78280-guyancourt",
+  mapsUrl: "https://maps.app.goo.gl/NBhwCvKMo22xqU9X7",
+  accentColor: "#5f3914",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },
@@ -107,15 +106,6 @@ export const Barber46Config: BarberConfig = {
     },
   ],
   galleryImages: [
-    //     ""public/images/template/tempalte-thu.avif"
-    // ""public/images/template/template-barber.avif"
-    // ""public/images/template/template-blond.avif"
-    // ""public/images/template/template-cut.avif"
-    // ""public/images/template/template-ffu.avif"
-    // ""public/images/template/template-gd.avif"
-    // ""public/images/template/template-laque.avif"
-    // ""public/images/template/template-log.avif"
-    // ""public/images/template/templatecoiff.avif"
     {
       src: "/images/template/tempalte-thu.avif",
       alt: "Skin fade net en lumiere studio",

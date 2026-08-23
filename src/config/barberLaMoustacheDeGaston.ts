@@ -1,25 +1,24 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
+export const BarberLaMoustacheDeGastonConfig: BarberConfig = {
+  domain: "barber-la-moustache-de-gaston",
+  title: "Votre Barber à Limoges",
   subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+  name: "La Moustache De Gaston",
+  legalName: "La Moustache De Gaston",
+  logo: "",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Barber à Limoges. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Limoges",
+  address: "11 Avenue Saint-Eloi, 87000 Limoges",
+  phone: "05 55 33 50 63",
+  email: "",
+  instagram: "@lamoustachedegaston",
+  instagramUrl: "https://www.instagram.com/lamoustachedegaston/",
+  bookingUrl: "https://www.planity.com/la-moustache-de-gaston-limoges",
+  mapsUrl: "https://maps.app.goo.gl/x1KPdjiHiYNckCRF8",
+  accentColor: "#bd0000",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },

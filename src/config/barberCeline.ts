@@ -1,25 +1,25 @@
 import type { BarberConfig } from "./index";
 
-export const Barber46Config: BarberConfig = {
-  domain: "barber-46th",
-  title: "Votre Barber à Plaisance-du-Touch",
+export const BarberCelineConfig: BarberConfig = {
+  domain: "celine-barber",
+  title: "Votre Barber à Villeneuve-lès-Béziers",
   subTitle: "Votre style. Notre signature",
-  name: "46th Barber Street",
-  legalName: "46th Barber Street",
-  logo: "/images/barber46/logo.png",
+  name: "Céline Barber",
+  legalName: "Céline Barber",
+  logo: "/images/barber-celine/logo.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
-    "Barber Studio à Plaisance-du-Touch. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
-  city: "Plaisance-du-Touch",
-  address:
-    "Place de saint Nicolas 46 avenue des Pyrénées, 31830 Plaisance-du-Touch",
-  phone: "0952833055",
-  email: "contact@ateliernord.fr",
-  instagram: "@barber.240",
-  instagramUrl: "https://www.instagram.com/barber.240/",
-  bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
-  accentColor: "#756659",
+    "Barber Studio à Villeneuve-lès-Béziers. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
+  city: "Villeneuve-lès-Béziers",
+  address: "18 rue Frédéric Irène Joliot-Curie, 34420 Villeneuve-lès-Béziers",
+  phone: "06 40 57 17 75",
+  email: "contact@celinebarber.fr",
+  instagram: "@celine.barber",
+  instagramUrl: "https://www.instagram.com/celine.barber/",
+  bookingUrl:
+    "https://www.planity.com/celine-barber-34420-villeneuve-les-beziers",
+  mapsUrl: "https://maps.app.goo.gl/8ZJ25zfesUGhfhY48",
+  accentColor: "#7b6d32",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },
     { day: "Mardi", hours: "10:00 - 19:00" },
