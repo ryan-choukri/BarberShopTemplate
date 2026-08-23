@@ -69,7 +69,6 @@ export type BarberConfig = {
   phone: string;
   email: string;
   instagram: string;
-  instagramUrl: string;
   bookingUrl: string;
   mapsUrl: string;
   accentColor: string;

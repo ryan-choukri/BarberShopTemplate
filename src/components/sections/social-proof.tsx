@@ -20,7 +20,7 @@ export function SocialProofSection() {
           {barberConfig.socialImages.map((image) => (
             <a
               key={image.src}
-              href={barberConfig.instagramUrl}
+              href={`https://www.instagram.com/${barberConfig.instagram}/`}
               target="_blank"
               rel="noopener noreferrer"
               className="group relative block aspect-square overflow-hidden border border-zinc-800"
@@ -40,7 +40,10 @@ export function SocialProofSection() {
         </div>
 
         <div className="mt-8">
-          <ButtonLink href={barberConfig.instagramUrl} variant="secondary">
+          <ButtonLink
+            href={`https://www.instagram.com/${barberConfig.instagram}/`}
+            variant="secondary"
+          >
             Suivre {barberConfig.instagram}
           </ButtonLink>
         </div>

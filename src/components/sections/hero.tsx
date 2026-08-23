@@ -22,7 +22,7 @@ export function Hero() {
           <p className="mb-5 text-[10px] uppercase tracking-[0.3em] text-zinc-400">
             {barberConfig.subTitle}
           </p>
-          <h1 className="font-joaquin [word-spacing:-20%] tracking-normal text-5xl uppercase leading-[0.92] text-zinc-50 sm:text-6xl md:text-[5.2rem]">
+          <h1 className="font-joaquin [word-spacing:-20%] tracking-normal text-5xl uppercase  text-zinc-50 sm:text-6xl md:text-[5.2rem]">
             {barberConfig.title}
           </h1>
           <p className="sm:mt-8 mt-4 max-w-sm text-sm leading-relaxed text-zinc-300 md:text-base">
@@ -51,24 +51,28 @@ export function Hero() {
           <div className="invisible md:visible">
             <div className="premiumImage md:h-[62vh] md:min-h-[430px] group relative h-[18vh] min-h-[60px] overflow-hidden border border-zinc-800 bg-zinc-900  md:translate-y-6">
               <div className="insidePremiumImage"></div>
-              <Image
-                src={barberConfig.logo}
-                alt="Barber en plein travail sur une coupe degradee"
-                width={220}
-                height={220}
-                priority
-                className="visible md:invisible absolute left-1/2 top-1/2 z-20 h-auto w-35 -translate-x-1/2 -translate-y-1/2 object-contain opacity-95 drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] transition-transform duration-700 group-hover:scale-125 md:right-6 md:top-6 md:w-24"
-                sizes="(max-width: 868px) 130px, 96px"
-              />
-              <Image
-                src={barberConfig.logo}
-                alt="Barber en plein travail sur une coupe degradee"
-                width={220}
-                height={220}
-                priority
-                className=" absolute right-4 top-4 z-20 h-auto w-16 object-contain opacity-95 drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] transition-transform duration-700 group-hover:scale-125 md:right-6 md:top-6 md:w-24"
-                sizes="(max-width: 768px) 64px, 96px"
-              />
+              {barberConfig.logo && (
+                <>
+                  <Image
+                    src={barberConfig.logo}
+                    alt="Barber en plein travail sur une coupe degradee"
+                    width={220}
+                    height={220}
+                    priority
+                    className="visible md:invisible absolute left-1/2 top-1/2 z-20 h-auto w-35 -translate-x-1/2 -translate-y-1/2 object-contain opacity-95 drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] transition-transform duration-700 group-hover:scale-125 md:right-6 md:top-6 md:w-24"
+                    sizes="(max-width: 868px) 130px, 96px"
+                  />
+                  <Image
+                    src={barberConfig.logo}
+                    alt="Barber en plein travail sur une coupe degradee"
+                    width={220}
+                    height={220}
+                    priority
+                    className=" absolute right-4 top-4 z-20 h-auto w-16 object-contain opacity-95 drop-shadow-[0_8px_18px_rgba(0,0,0,0.45)] transition-transform duration-700 group-hover:scale-125 md:right-6 md:top-6 md:w-24"
+                    sizes="(max-width: 768px) 64px, 96px"
+                  />
+                </>
+              )}
               <Image
                 src="/images/barber-client.webp"
                 alt="Barber en plein travail sur une coupe degradee"

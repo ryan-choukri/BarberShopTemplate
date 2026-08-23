@@ -26,12 +26,13 @@ export default async function AdminPage() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 rounded-xl bg-[repeating-linear-gradient(315deg,rgba(24,24,27,0.05)_0,rgba(24,24,27,0.05)_1px,transparent_0,transparent_50%)] bg-[size:10px_10px] bg-fixed sm:p-6 p-2 dark:bg-[repeating-linear-gradient(315deg,rgba(255,255,255,0.1)_0,rgba(255,255,255,0.3)_1px,transparent_0,transparent_50%)]">
+          {" "}
           {barbers.map((barber) => (
             <div
               key={barber.domain}
               style={{ borderColor: barber.accentColor }}
-              className={`flex flex-col sm:flex-row items-center justify-between rounded-xl border-3 border-l-10 border-zinc-800 p-6`}
+              className={`bg-gray-950 flex flex-col sm:flex-row items-center justify-between rounded-xl border-3 border-l-10 border-zinc-800 p-3 sm:p-2`}
             >
               <div className="flex flex-row items-center gap-4">
                 <Image
@@ -44,20 +45,31 @@ export default async function AdminPage() {
 
                 <div>
                   <h2 className="text-xl font-semibold">{barber.name}</h2>
-
-                  <p className="mt-1 text-sm text-zinc-500">{barber.city}</p>
+                  <p className="mt-1 text-sm text-zinc-500">
+                    <span>{barber.city}</span> / <span>{barber.phone}</span> /{" "}
+                    <Link
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={`https://www.instagram.com/${barber.instagram}`}
+                      className="mt-1 text-sm text-sky-600 italic hover:underline"
+                    >
+                      @{barber.instagram}
+                    </Link>
+                  </p>
 
                   {barber.domain && (
                     <Link
                       href={barber.mapsUrl}
-                      className="mt-1 text-sm text-sky-500 italic hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 text-sm font-bold text-sky-500 italic hover:underline"
                     >
                       Google Map : {barber.mapsUrl}
                     </Link>
                   )}
                 </div>
               </div>
-              <div className="flex mt-2 sm:mt-8 items-end gap-2">
+              <div className="flex mt-2 sm:mt-0 mr-4 items-end gap-2">
                 <Link
                   href={`/${barber.domain}`}
                   target="_blank"

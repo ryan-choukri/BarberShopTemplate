@@ -44,7 +44,7 @@ export function Footer() {
           </p>
           <p className="mt-2">
             <a
-              href={barberConfig.instagramUrl}
+              href={`https://www.instagram.com/${barberConfig.instagram}/`}
               className="transition-colors hover:text-[var(--accent)]"
               target="_blank"
               rel="noopener noreferrer"

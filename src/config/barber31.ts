@@ -15,7 +15,6 @@ export const Barber31Config: BarberConfig = {
   phone: "09 88 35 54 77",
   email: "barberafro.31@gmail.com",
   instagram: "",
-  instagramUrl: "",
   bookingUrl: "",
   mapsUrl: "https://www.facebook.com/SonyhdMabaya/",
   accentColor: "#a70e0e",

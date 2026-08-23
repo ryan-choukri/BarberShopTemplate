@@ -56,7 +56,7 @@ export default function Home() {
   //     addressCountry: "FR",
   //   },
   //   areaServed: barberConfig.city,
-  //   sameAs: [barberConfig.instagramUrl],
+  //   sameAs: [barberConfig.instagram],
   //   url: barberConfig.bookingUrl,
   // };
 

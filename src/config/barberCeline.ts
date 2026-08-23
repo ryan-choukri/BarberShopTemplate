@@ -14,8 +14,7 @@ export const BarberCelineConfig: BarberConfig = {
   address: "18 rue Frédéric Irène Joliot-Curie, 34420 Villeneuve-lès-Béziers",
   phone: "06 40 57 17 75",
   email: "contact@celinebarber.fr",
-  instagram: "@celine.barber",
-  instagramUrl: "https://www.instagram.com/celine.barber/",
+  instagram: "celine.barber",
   bookingUrl:
     "https://www.planity.com/celine-barber-34420-villeneuve-les-beziers",
   mapsUrl: "https://maps.app.goo.gl/8ZJ25zfesUGhfhY48",

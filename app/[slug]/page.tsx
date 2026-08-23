@@ -117,7 +117,7 @@ export default async function Home({ params }: Props) {
       addressCountry: "FR",
     },
     areaServed: barberConfig.city,
-    sameAs: [barberConfig.instagramUrl],
+    sameAs: [barberConfig.instagram],
     url: barberConfig.bookingUrl,
   };
 
