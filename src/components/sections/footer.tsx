@@ -49,7 +49,7 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {barberConfig.instagram}
+              @{barberConfig.instagram}
             </a>
           </p>
         </div>
