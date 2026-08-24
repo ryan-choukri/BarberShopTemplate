@@ -1,10 +1,10 @@
 import type { BarberConfig } from "./index";
 
 export const Barber34streetConfig: BarberConfig = {
-  name: "34 Barberstreet",
+  name: "34 Barber Street",
   domain: "34-barberstreet",
   title: "Votre Barber à Béziers",
-  legalName: "",
+  legalName: "34 Barber Street",
   logo: "/images/logo-generic.png",
   subTitle: "Votre style. Notre signature.",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",

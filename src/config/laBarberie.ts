@@ -4,7 +4,7 @@ export const LaBarberieConfig: BarberConfig = {
   domain: "la-barberie",
   title: "Votre Barber à Limoges",
   subTitle: "Votre style. Notre signature.",
-  name: "laBarberie",
+  name: "La Barberie",
   legalName: "La Barberie",
   logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
