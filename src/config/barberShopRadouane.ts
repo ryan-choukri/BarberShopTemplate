@@ -6,7 +6,7 @@ export const BarberShopRadouaneConfig: BarberConfig = {
   subTitle: "Votre style. Notre signature.",
   name: "Barber Shop Radouane",
   legalName: "Barber Shop Radouane",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Barber Shop Radouane. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",

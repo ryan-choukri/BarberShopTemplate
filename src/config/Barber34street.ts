@@ -5,7 +5,7 @@ export const Barber34streetConfig: BarberConfig = {
   domain: "34-barberstreet",
   title: "Votre Barber à Béziers",
   legalName: "",
-  logo: "",
+  logo: "/images/logo-generic.png",
   subTitle: "Votre style. Notre signature.",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:

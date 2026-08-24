@@ -12,11 +12,11 @@ export function ReviewsSection() {
 
   return (
     <section>
-      <div className="section-shell py-16 md:py-24">
+      <div className="section-shell py-12 md:py-24">
         <SectionHeading
           kicker="Avis"
           title="Ce que disent les clients"
-          subtitle="Des retours reels, visibles en ligne, qui rassurent avant la premiere reservation."
+          subtitle="Des retours réels, visibles en ligne, qui rassurent avant la première réservation."
           align="split"
         />
 

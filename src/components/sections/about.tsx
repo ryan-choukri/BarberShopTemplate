@@ -10,9 +10,9 @@ export function AboutSection() {
     <section id="equipe" className="backgroundImage border-b border-zinc-900">
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-8 md:py-24">
         <SectionHeading
-          kicker="A propos"
+          kicker="À propos"
           title="Une équipe, une ligne"
-          subtitle="Pas de chaine, pas de coupe standardisee. Ici, chaque rendez-vous commence par un vrai echange et un regard sur votre style de vie."
+          subtitle="Pas de chaîne, pas de coupe standardisée. Ici, chaque rendez-vous commence par un vrai échange et un regard sur votre style de vie."
         />
 
         <div className="grid grid-cols-2 gap-4 mt-12 md:gap-4 md:grid-cols-3">

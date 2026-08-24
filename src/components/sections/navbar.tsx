@@ -4,9 +4,9 @@ import { ButtonLink } from "@/src/components/ui/button-link";
 import localFont from "next/font/local";
 
 const links = [
-  { href: "#prestations", label: "Prestations" },
-  { href: "#realisations", label: "Realisations" },
-  { href: "#equipe", label: "Equipe" },
+  { href: "#prestations", label: "Préstations" },
+  { href: "#realisations", label: "Réalisations" },
+  { href: "#equipe", label: "Équipe" },
   { href: "#contact", label: "Contact" },
 ];
 const titleFont = localFont({

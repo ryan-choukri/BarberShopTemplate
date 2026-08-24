@@ -6,7 +6,7 @@ export const LaBarberieConfig: BarberConfig = {
   subTitle: "Votre style. Notre signature.",
   name: "laBarberie",
   legalName: "La Barberie",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "La Barberie. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
@@ -16,7 +16,7 @@ export const LaBarberieConfig: BarberConfig = {
   email: "",
   instagram: "la_barberie_87",
   bookingUrl: "https://www.planity.com/la-barberie-87000-limoges",
-  mapsUrl: "",
+  mapsUrl: "https://maps.app.goo.gl/LbRviu5oTiD8fNPXA",
   accentColor: "#81320e",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },

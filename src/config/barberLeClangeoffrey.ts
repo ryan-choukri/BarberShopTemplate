@@ -6,7 +6,7 @@ export const BarberLeClangeoffreyConfig: BarberConfig = {
   subTitle: "Votre style. Notre signature.",
   name: "Le Clan Geoffrey",
   legalName: "Le Clan Geoffrey",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Barber Le Clan Geoffrey est un salon de coiffure et de barbier situé à Angers, spécialisé dans les coupes de cheveux et les soins de barbe pour hommes. Notre équipe de barbiers expérimentés offre des services personnalisés pour répondre aux besoins et aux préférences de chaque client, en utilisant des techniques modernes et des produits de qualité. Nous nous engageons à créer une expérience unique et agréable pour nos clients, en mettant l'accent sur le style, la précision et le confort.",

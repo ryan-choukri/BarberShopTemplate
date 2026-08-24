@@ -4,9 +4,9 @@ export const BarberLatelierDuBarberConfig: BarberConfig = {
   domain: "barber-latelier-du-barber",
   title: "Votre Barber à Limoges",
   subTitle: "Votre style. Notre signature.",
-  name: "barberLatelierDuBarber",
-  legalName: "L'atelier Du Barber",
-  logo: "",
+  name: "L'Atelier Du Barber",
+  legalName: "L'Atelier Du Barber",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Barber à Limoges. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",

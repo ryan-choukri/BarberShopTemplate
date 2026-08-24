@@ -8,7 +8,7 @@ export function ServicesSection() {
 
   return (
     <section id="prestations">
-      <div className="section-shell py-16 md:py-24">
+      <div className="section-shell py-12 md:py-24">
         <SectionHeading
           kicker="Prestations"
           title="Nos Prestations"

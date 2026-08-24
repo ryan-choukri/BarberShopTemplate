@@ -35,13 +35,17 @@ export default async function AdminPage() {
               className={`bg-gray-950 flex flex-col sm:flex-row items-center justify-between rounded-xl border-3 border-l-10 border-zinc-800 p-3 sm:p-2`}
             >
               <div className="flex flex-row items-center gap-4">
-                <Image
-                  src={barber.logo}
-                  alt={`${barber.name} logo`}
-                  width={80}
-                  height={80}
-                  className="rounded-full"
-                />
+                {barber.logo && (
+                  <>
+                    <Image
+                      src={barber.logo}
+                      alt={`${barber.name} logo`}
+                      width={80}
+                      height={80}
+                      className="rounded-full"
+                    />
+                  </>
+                )}
 
                 <div>
                   <h2 className="text-xl font-semibold">{barber.name}</h2>

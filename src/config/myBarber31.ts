@@ -6,7 +6,7 @@ export const MyBarber31Config: BarberConfig = {
   name: "My Barber 31",
   subTitle: "Votre style. Notre signature.",
   legalName: "My Barber 31",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Barber à Toulouse. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
@@ -16,7 +16,7 @@ export const MyBarber31Config: BarberConfig = {
   email: "barberafro.31@gmail.com",
   instagram: "mybarber31",
   bookingUrl: "https://www.planity.com/lm-studio-31000-toulouse-g8i",
-  mapsUrl: "https://www.facebook.com/SonyhdMabaya/",
+  mapsUrl: "https://maps.app.goo.gl/8hWSgAKtNaybWVyQA",
   accentColor: "#c2bc00",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },

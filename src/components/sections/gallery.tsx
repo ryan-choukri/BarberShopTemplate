@@ -15,7 +15,7 @@ export function GallerySection() {
   const barberConfig = useCurrentBarber();
   return (
     <section id="realisations">
-      <div className="section-shell py-16 md:py-28">
+      <div className="section-shell py-12 md:py-28">
         <SectionHeading
           kicker="Realisations"
           title="Textures, details, lignes"

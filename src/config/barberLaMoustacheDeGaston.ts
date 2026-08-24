@@ -6,7 +6,7 @@ export const BarberLaMoustacheDeGastonConfig: BarberConfig = {
   subTitle: "Votre style. Notre signature",
   name: "La Moustache De Gaston",
   legalName: "La Moustache De Gaston",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Barber à Limoges. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",

@@ -17,7 +17,7 @@ export const Barber46Config: BarberConfig = {
   email: "contact@ateliernord.fr",
   instagram: "lilouabde",
   bookingUrl: "https://www.planity.com/atelier-nord-angers",
-  mapsUrl: "https://maps.app.goo.gl/sFtkSdFTzy6dXSY8A",
+  mapsUrl: "https://maps.app.goo.gl/tn48XTQ2GBCpSidK7",
   accentColor: "#756659",
   openingHours: [
     { day: "Lundi", hours: "Ferme" },

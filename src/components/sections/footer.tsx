@@ -4,7 +4,7 @@ import { useCurrentBarber } from "@/src/contexts/BarberContext";
 export function Footer() {
   const barberConfig = useCurrentBarber();
   return (
-    <footer className="bg-black py-14">
+    <footer className="bg-black py-12">
       <div className="section-shell grid gap-4 text-sm text-zinc-300 md:grid-cols-12">
         <div>
           <p className="font-display text-3xl uppercase text-zinc-50">

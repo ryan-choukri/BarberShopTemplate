@@ -33,9 +33,9 @@ export function Hero() {
             <ButtonLink
               href={barberConfig.bookingUrl}
               variant="primary"
-              ariaLabel="Reserver en quelques secondes"
+              ariaLabel="Réserver en quelques secondes"
             >
-              Reserver
+              Réserver
             </ButtonLink>
             <ButtonLink
               href="#prestations"

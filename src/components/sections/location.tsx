@@ -8,12 +8,12 @@ export function LocationSection() {
   const barberConfig = useCurrentBarber();
   return (
     <section id="contact">
-      <div className="section-shell grid gap-8 py-16 md:grid-cols-12 md:py-24">
+      <div className="section-shell grid gap-8 py-12 md:grid-cols-12 md:py-24">
         <div className="md:col-span-6">
           <SectionHeading
             kicker="Localisation"
-            title="Passez nous voir"
-            subtitle="Acces simple en centre-ville. Le plus rapide reste de reserver votre creneau, puis venir a l heure."
+            title="Passez nous voir !"
+            subtitle="Accès simple en centre-ville. Le plus rapide reste de réserver votre créneau."
             align="split"
           />
 

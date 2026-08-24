@@ -6,7 +6,7 @@ export const BarberUrbanCutzConfig: BarberConfig = {
   subTitle: "Votre style. Notre signature.",
   name: "Urban Cutz",
   legalName: "Urban Cutz",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Barber Urban Cutz. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",

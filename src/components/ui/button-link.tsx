@@ -7,6 +7,7 @@ type ButtonLinkProps = {
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
   ariaLabel?: string;
+  size?: "sm" | "md";
 };
 
 export function ButtonLink({
@@ -15,9 +16,12 @@ export function ButtonLink({
   variant = "primary",
   className = "",
   ariaLabel,
+  size = "sm",
 }: ButtonLinkProps) {
   const base =
-    "inline-flex items-center justify-center border px-6 py-3 text-[10px] font-semibold uppercase tracking-[0.24em] transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent)";
+    "inline-flex items-center justify-center border px-6 py-3 text-[" +
+    (size === "sm" ? "10px" : "11px") +
+    "] font-semibold uppercase tracking-[0.24em] transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--accent)";
 
   const variants = {
     primary:

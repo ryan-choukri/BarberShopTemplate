@@ -6,7 +6,7 @@ export const BestBarberCoiffureConfig: BarberConfig = {
   subTitle: "Votre style. Notre signature.",
   name: "bestBarberCoiffure",
   legalName: "Best Barber Coiffure",
-  logo: "",
+  logo: "/images/logo-generic.png",
   slogan: "COUPES PRECISES. ATTITUDE LIBRE.",
   description:
     "Best Barber Coiffure. Dégradés nets, tailles de barbe, structures et direction stylistique urbaine pour ceux qui veulent plus qu'une coupe.",
