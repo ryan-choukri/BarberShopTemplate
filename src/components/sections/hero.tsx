@@ -13,7 +13,7 @@ export function Hero() {
         aria-hidden="true"
       />
       <div
-        className="absolute left-100 top-0 h-[150%] w-[150%] bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent)_35%,transparent)_0%,transparent_40%)]"
+        className="absolute left-100 top-0 h-[150%] w-[150%] bg-[radial-gradient(circle_at_top,color-mix(in_srgb,var(--accent)_25%,transparent)_0%,transparent_40%)]"
         aria-hidden="true"
       />
 

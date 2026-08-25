@@ -14,6 +14,26 @@ import { BarberLatelierDuBarberConfig } from "./barberLatelierDuBarber";
 import { LaBarberieConfig } from "./laBarberie";
 import { BarberUrbanCutzConfig } from "./barberUrbanCutz";
 import { MyBarber31Config } from "./myBarber31";
+import { BarberKluHouse } from "./barberKluHouse";
+import { JBCoiffure } from "./JBCoiffure";
+import { DEFAULTCONFIG } from "./DEFAULTCONFIG";
+import { ChezBenCoiffure } from "./chezBenCoiffure";
+import { MammeriCoiffure } from "./mammeriCoiffure";
+import { FloStudioBarber } from "./floStudioBarber";
+import { GentlemanCoiffure } from "./gentlemanCoiffure";
+import { OussBarberShop } from "./oussBarberShop";
+import { RkBarberShop } from "./rkBarberShop";
+import { DLatinBarber } from "./dlatinBarber";
+import { JockerBarber } from "./jockerBarber";
+import { TheApocalypseBarber72 } from "./theApocalypseBarber72";
+import { LaTondeuse } from "./laTondeuse";
+import { BarberChasseRoyale } from "./barberChasseRoyale";
+import { BarberShopRoyal } from "./barberShopRoyal";
+import { LeMansBarberShopSansRendezVous } from "./barberShopSansRdv";
+import { GentlemanBarbu } from "./gentlemanBarbu";
+import { HairKBarber } from "./hairKBarber";
+import { PrimoBarber } from "./PrimoBarber";
+import { TopKingBarbier } from "./topKingBarbier";
 
 export type OpeningHours = {
   day: string;
@@ -55,10 +75,35 @@ export type SocialImage = {
   alt: string;
 };
 
-export type BarberConfig = {
+export type BarberConfigIncomplete = {
   domain: string;
   title: string;
   subTitle?: string;
+  name: string;
+  legalName: string;
+  slogan?: string;
+  description: string;
+  city: string;
+  address: string;
+  phone: string;
+  email: string;
+  instagram: string;
+  bookingUrl: string;
+  mapsUrl: string;
+  logo?: string;
+  accentColor?: string;
+  openingHours?: OpeningHours[];
+  services?: Service[];
+  team?: TeamMember[];
+  reviews?: Review[];
+  galleryImages?: GalleryImage[];
+  socialImages?: SocialImage[];
+};
+
+export type BarberConfig = {
+  domain: string;
+  title: string;
+  subTitle: string;
   name: string;
   logo: string;
   legalName: string;
@@ -81,20 +126,51 @@ export type BarberConfig = {
 };
 
 export const barberConfigs: Record<string, BarberConfig> = {
-  "barber-240": Barber240Config,
-  "46th-barber-street": Barber46Config,
-  "celine-barber": BarberCelineConfig,
-  "lhomme-et-jean": BarberHommeEtJeanConfig,
-  "haircut-factory": BarberHaircutFactory,
-  barber31: Barber31Config,
-  "best-barber-coiffure": BestBarberCoiffureConfig,
-  "barber-shop-radouane": BarberShopRadouaneConfig,
-  "yan-barber": YanBarberConfig,
-  "34-barberstreet": Barber34streetConfig,
-  "barber-le-clangeoffrey": BarberLeClangeoffreyConfig,
-  "barber-la-moustache-de-gaston": BarberLaMoustacheDeGastonConfig,
-  "barber-latelier-du-barber": BarberLatelierDuBarberConfig,
-  "la-barberie": LaBarberieConfig,
-  "barber-urban-cutz": BarberUrbanCutzConfig,
-  mybarber31: MyBarber31Config,
+  "barber-240": { ...DEFAULTCONFIG, ...Barber240Config },
+  "46th-barber-street": { ...DEFAULTCONFIG, ...Barber46Config },
+  "celine-barber": { ...DEFAULTCONFIG, ...BarberCelineConfig },
+  "lhomme-et-jean": { ...DEFAULTCONFIG, ...BarberHommeEtJeanConfig },
+  "haircut-factory": { ...DEFAULTCONFIG, ...BarberHaircutFactory },
+  barber31: { ...DEFAULTCONFIG, ...Barber31Config },
+  "best-barber-coiffure": { ...DEFAULTCONFIG, ...BestBarberCoiffureConfig },
+  "barber-shop-radouane": { ...DEFAULTCONFIG, ...BarberShopRadouaneConfig },
+  "yan-barber": { ...DEFAULTCONFIG, ...YanBarberConfig },
+  "34-barberstreet": { ...DEFAULTCONFIG, ...Barber34streetConfig },
+  "barber-le-clangeoffrey": { ...DEFAULTCONFIG, ...BarberLeClangeoffreyConfig },
+  "barber-la-moustache-de-gaston": {
+    ...DEFAULTCONFIG,
+    ...BarberLaMoustacheDeGastonConfig,
+  },
+  "barber-latelier-du-barber": {
+    ...DEFAULTCONFIG,
+    ...BarberLatelierDuBarberConfig,
+  },
+  "la-barberie": { ...DEFAULTCONFIG, ...LaBarberieConfig },
+  "barber-urban-cutz": { ...DEFAULTCONFIG, ...BarberUrbanCutzConfig },
+  mybarber31: { ...DEFAULTCONFIG, ...MyBarber31Config },
+  "mammeri-coiffure": { ...DEFAULTCONFIG, ...MammeriCoiffure },
+  "flo-studio-barber": { ...DEFAULTCONFIG, ...FloStudioBarber },
+  "jb-coiffure": { ...DEFAULTCONFIG, ...JBCoiffure },
+  "klu-house": { ...DEFAULTCONFIG, ...BarberKluHouse },
+  "chez-ben-coiffure": { ...DEFAULTCONFIG, ...ChezBenCoiffure },
+  "gentleman-coiffure": { ...DEFAULTCONFIG, ...GentlemanCoiffure },
+  "ouss-barber-shop": { ...DEFAULTCONFIG, ...OussBarberShop },
+  rkbarbershop: { ...DEFAULTCONFIG, ...RkBarberShop },
+  "dlatin-barber": { ...DEFAULTCONFIG, ...DLatinBarber },
+  "jocker-barber": { ...DEFAULTCONFIG, ...JockerBarber },
+  "the-apocalypse-barber-72": {
+    ...DEFAULTCONFIG,
+    ...TheApocalypseBarber72,
+  },
+  "la-tondeuse-barber-shop": { ...DEFAULTCONFIG, ...LaTondeuse },
+  "barber-chasse-royale": { ...DEFAULTCONFIG, ...BarberChasseRoyale },
+  "barber-shop-royal": { ...DEFAULTCONFIG, ...BarberShopRoyal },
+  "barber-shop-sans-rdv": {
+    ...DEFAULTCONFIG,
+    ...LeMansBarberShopSansRendezVous,
+  },
+  "gentleman-barbu": { ...DEFAULTCONFIG, ...GentlemanBarbu },
+  "hair-k-barber": { ...DEFAULTCONFIG, ...HairKBarber },
+  "primo-barber": { ...DEFAULTCONFIG, ...PrimoBarber },
+  "top-king-barbier": { ...DEFAULTCONFIG, ...TopKingBarbier },
 };

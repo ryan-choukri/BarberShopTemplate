@@ -2,7 +2,7 @@
 import { SectionHeading } from "@/src/components/layout/section-heading";
 import { ButtonLink } from "@/src/components/ui/button-link";
 import { useCurrentBarber } from "@/src/contexts/BarberContext";
-
+// import PlanityWidget from "@/src/components/lib/planityWidget";
 export function ServicesSection() {
   const barberConfig = useCurrentBarber();
 
@@ -15,6 +15,11 @@ export function ServicesSection() {
           subtitle="Des prestations claires, sans options inutiles. Vous choisissez votre format, nous assurons la precision."
           align="split"
         />
+        {/* <PlanityWidget
+          containerId="my-planity-container"
+          apiKey="-OCYcNW6amffSBt6iWZW"
+          primaryColor="#8e7a7a"
+        /> */}
 
         <div className="mt-14 grid gap-4 md:grid-cols-12">
           {barberConfig.services.map((service) => (
